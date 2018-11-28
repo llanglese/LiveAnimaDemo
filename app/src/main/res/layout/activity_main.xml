@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.juying.vrmu.demo.liveanimademo.MainActivity">
+    <RelativeLayout
+        android:id="@+id/rl_gift"
+        android:layout_width="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="58dp">
+
+        <ImageView
+            android:id="@+id/iv_gift_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="7dp"
+            android:scaleType="fitXY" />
+
+        <com.juying.vrmu.demo.liveanimademo.QuickClickView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="invisible"
+            android:id="@+id/quick_click_view"
+            />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
